@@ -1,0 +1,36 @@
+# ---- Cocos Creator ----
+library/
+temp/
+local/
+profiles/
+build/
+native/engine/common/generated/
+
+# ---- Node / tooling ----
+node_modules/
+*.tsbuildinfo
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+.DS_Store
+debug.log
+
+# ---- Android ----
+**/.gradle/
+**/local.properties
+**/*.jks
+**/*.keystore
+
+# ---- iOS ----
+**/*.xcuserstate
+**/xcuserdata/
+
+# ---- AdMob iOS SDK (fetched on demand, not vendored — see scripts/fetch-admob-ios-sdk.sh) ----
+extensions/AdMob/template/ios/admob/GoogleMobileAds.xcframework/
+extensions/AdMob/template/ios/admob/UserMessagingPlatform.xcframework/
+
+# ---- Secrets (should never exist in this repo) ----
+.env
+google-services.json
+GoogleService-Info.plist
